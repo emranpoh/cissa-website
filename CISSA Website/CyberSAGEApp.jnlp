@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" codebase="https://www.illinois.adsc.com.sg/cybersage/" href="CyberSAGEApp.jnlp">
+  <information>
+    <title>CyberSAGE App</title>
+    <vendor>ADSC</vendor>
+    <description>ADSC security assessment tool</description>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="libs/controlsfx-8.0.5.jar" size="764905" download="eager" />
+    <jar href="CyberSAGEApp.jar" size="440620" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="1200" height="900" main-class="com.javafx.main.NoJavaFXFallback"  name="CyberSAGE" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="1200" height="900" main-class="ams.MainApplication"  name="CyberSAGE" />
+  <update check="background"/>
+</jnlp>

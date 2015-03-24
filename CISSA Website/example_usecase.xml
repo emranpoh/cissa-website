@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2009-02-03 09:27:19">
+  <UML:Namespace.ownedElement>
+    <UML:Package name="FOOBAR">
+      <UML:Namespace.ownedElement>
+	<UML:Dependency  supplier="ID_AS0">
+	  <UML:ModelElement.taggedValue>
+	    <UML:TaggedValue tag="ea_sourceName" value="DCU"/>
+	    <UML:TaggedValue tag="ea_sourceType" value="Actor"/>
+	  </UML:ModelElement.taggedValue>
+	</UML:Dependency>
+	<UML:Dependency  supplier="ID_AS1">
+	  <UML:ModelElement.taggedValue>
+	    <UML:TaggedValue tag="ea_sourceName" value="AMI Meter"/>
+	    <UML:TaggedValue tag="ea_sourceType" value="Actor"/>
+	  </UML:ModelElement.taggedValue>
+	</UML:Dependency>
+	<UML:Dependency  supplier="ID_AS2">
+	  <UML:ModelElement.taggedValue>
+	    <UML:TaggedValue tag="ea_sourceName" value="DCU"/>
+	    <UML:TaggedValue tag="ea_sourceType" value="Actor"/>
+	  </UML:ModelElement.taggedValue>
+	</UML:Dependency>
+	<UML:Package  name="E1 - Meter Reading">
+	  <UML:PseudoState name="ActivityInitial" xmi.id="ID_AI">
+	  </UML:PseudoState>
+	  <UML:PseudoState name="ActivityFinal" xmi.id="ID_AF">
+	  </UML:PseudoState>
+	  <UML:ActionState name="AMI DCU sends reading request to AMI Meter" xmi.id="ID_AS0">
+	  </UML:ActionState>
+	  <UML:ActionState name="AMI meter receives request, performs reading, sends reply" xmi.id="ID_AS1">
+	  </UML:ActionState>
+	  <UML:ActionState name="AMI DCU receives reply from AMI Meter" xmi.id="ID_AS2">
+	  </UML:ActionState>
+	  <UML:Transition  source="ID_AI" target="ID_AS0">
+	  </UML:Transition>
+	  <UML:Transition  source="ID_AS0" target="ID_AS1">
+	  </UML:Transition>
+	  <UML:Transition  source="ID_AS1" target="ID_AS2">
+	  </UML:Transition>
+	  <UML:Transition  source="ID_AS2" target="ID_AF">
+	  </UML:Transition>
+	</UML:Package>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+  </UML:Namespace.ownedElement>
+</XMI>

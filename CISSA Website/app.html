@@ -1,0 +1,32 @@
+<!-- Author: Vu An Hoa -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="width=device-width,height=devide-height,initial-scale=1">
+<title>CISSA App</title>
+<script src="http://java.com/js/dtjava.js"></script>
+<script>
+    function javafxEmbed_fxApplication() {
+        dtjava.embed(
+            {
+                id : 'fxApplication',
+                url : 'CyberSAGEApp.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '100%',
+                height : '800'
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed_fxApplication);
+</script>
+</head>
+<body>
+	<div id='javafx-app-placeholder'></div>
+</body>
+</html>
