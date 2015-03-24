@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assessment>
+	<component_set>
+		<width>698</width>
+		<height>408</height>
+		<auto_dir_path>C:\Users\William.T\Application Data\Cset\
+		</auto_dir_path>
+		<auto_file_name>draw_auto_save.ogxml</auto_file_name>
+		<sequence>15</sequence>
+		<facility_sal>3</facility_sal>
+		<layer_array>
+			<layer_name>Primary</layer_name>
+			<layer_name>Layer 2</layer_name>
+			<layer_name>Layer 3</layer_name>
+			<layer_name>Layer 4</layer_name>
+			<layer_name>Layer 5</layer_name>
+		</layer_array>
+		<subnet>
+			<id>7</id>
+			<name>DCU-M</name>
+			<layer_name>Control Net</layer_name>
+		</subnet>
+		<subnet>
+			<id>10</id>
+			<name>M-M</name>
+			<layer_name>Control Net</layer_name>
+		</subnet>
+		<subnet>
+			<id>14</id>
+			<name>HE-DCU</name>
+			<layer_name>Control Net</layer_name>
+		</subnet>
+		<component>
+			<id>0</id>
+			<layer>0</layer>
+			<name>DCU</name>
+			<default_flag>N</default_flag>
+			<priority>2</priority>
+			<layer_name>Control Net</layer_name>
+			<asset_name>MTU</asset_name>
+			<x>568</x>
+			<y>302</y>
+			<tag>
+				<label>DCU</label>
+				<font_type>Normal</font_type>
+				<text_align>Left</text_align>
+				<font_size>15</font_size>
+				<font_color>
+					<red>0</red>
+					<green>0</green>
+					<blue>0</blue>
+				</font_color>
+				<x>482</x>
+				<y>305</y>
+			</tag>
+		</component>
+		<component>
+			<id>1</id>
+			<layer>0</layer>
+			<name>Meter 1</name>
+			<role>AMI Meter</role>
+			<default_flag>N</default_flag>
+			<priority>2</priority>
+			<layer_name>Control Net</layer_name>
+			<asset_name>RTU</asset_name>
+			<x>930</x>
+			<y>307</y>
+			<tag>
+				<label>Meter 1</label>
+				<font_type>Normal</font_type>
+				<text_align>Left</text_align>
+				<font_size>15</font_size>
+				<font_color>
+					<red>0</red>
+					<green>0</green>
+					<blue>0</blue>
+				</font_color>
+				<x>618</x>
+				<y>249</y>
+			</tag>
+		</component>
+		<component>
+			<id>2</id>
+			<layer>0</layer>
+			<name>Meter 2</name>
+			<default_flag>N</default_flag>
+			<priority>2</priority>
+			<layer_name>Control Net</layer_name>
+			<asset_name>RTU</asset_name>
+			<x>733</x>
+			<y>445</y>
+			<tag>
+				<label>Meter 2</label>
+				<font_type>Normal</font_type>
+				<text_align>Left</text_align>
+				<font_size>15</font_size>
+				<font_color>
+					<red>0</red>
+					<green>0</green>
+					<blue>0</blue>
+				</font_color>
+				<x>618</x>
+				<y>353</y>
+			</tag>
+		</component>
+		<component>
+			<id>12</id>
+			<layer>0</layer>
+			<name>Head End</name>
+			<role>DCU</role>
+			<default_flag>N</default_flag>
+			<priority>2</priority>
+			<layer_name>Control Net</layer_name>
+			<asset_name>Terminal Server</asset_name>
+			<x>416</x>
+			<y>373</y>
+			<tag>
+				<label>HE</label>
+				<font_type>Normal</font_type>
+				<text_align>Left</text_align>
+				<font_size>15</font_size>
+				<font_color>
+					<red>0</red>
+					<green>0</green>
+					<blue>0</blue>
+				</font_color>
+				<x>386</x>
+				<y>306</y>
+			</tag>
+		</component>
+		<link>
+			<id>4</id>
+			<layer>0</layer>
+			<security>Trusted</security>
+			<type>Unknown</type>
+			<nodeId1>0</nodeId1>
+			<nodeId2>1</nodeId2>
+			<subnet>7</subnet>
+			<point>
+				<x>472</x>
+				<y>296</y>
+			</point>
+			<point>
+				<x>608</x>
+				<y>240</y>
+			</point>
+		</link>
+		<link>
+			<id>8</id>
+			<layer>0</layer>
+			<security>Trusted</security>
+			<type>Unknown</type>
+			<nodeId1>0</nodeId1>
+			<nodeId2>2</nodeId2>
+			<subnet>7</subnet>
+			<point>
+				<x>472</x>
+				<y>296</y>
+			</point>
+			<point>
+				<x>608</x>
+				<y>344</y>
+			</point>
+		</link>
+		<link>
+			<id>9</id>
+			<layer>0</layer>
+			<security>Untrusted</security>
+			<type>Unknown</type>
+			<nodeId1>1</nodeId1>
+			<nodeId2>2</nodeId2>
+			<subnet>10</subnet>
+			<point>
+				<x>608</x>
+				<y>240</y>
+			</point>
+			<point>
+				<x>608</x>
+				<y>344</y>
+			</point>
+		</link>
+		<link>
+			<id>13</id>
+			<layer>0</layer>
+			<security>Trusted</security>
+			<type>Unknown</type>
+			<nodeId1>12</nodeId1>
+			<nodeId2>0</nodeId2>
+			<subnet>14</subnet>
+			<point>
+				<x>376</x>
+				<y>296</y>
+			</point>
+			<point>
+				<x>472</x>
+				<y>296</y>
+			</point>
+		</link>
+	</component_set>
+</assessment>

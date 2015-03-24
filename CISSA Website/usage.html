@@ -1,0 +1,362 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CISSA</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/jumbotron-narrow.css" />
+<link rel="stylesheet" href="css/dashboard.css">
+<script src="http://java.com/js/dtjava.js"></script>
+<script>
+	function launchApplication(jnlpfile) {
+		dtjava.launch({
+			url : 'CyberSAGEApp.jnlp'
+		}, {
+			javafx : '2.2+'
+		}, {});
+		return false;
+	}
+</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="img/final-02.png"><img class="center-block"
+							src="img/final-02.png" title="CyberSAGE" width="143" /></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="framework_1.html">CISSA Framework</a></li>
+					<li><a href="request.html">Download</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div class="row">
+			<h4>
+				A more detailed version of this "CyberSAGE Quick Start Guide" is also available
+				for <a
+					href="http://www.illinois.adsc.com.sg/docs/CyberSAGEQuickStartGuide.pdf">download</a>.
+			</h4>
+			<h4>
+				Advanced users may also want to refer to the "CyberSAGE Design Document" which is also available
+				for <a
+					href="http://www.illinois.adsc.com.sg/cybersage_files/CyberSAGE-Design-Document.pdf">download</a>.
+			</h4>
+			<h3>Getting started</h3>
+	
+			<section id="systemrequirements" align="left">
+				<p>CyberSAGE does not need any installation on the users system.
+					It does not make any changes to the systems registry,services,etc.
+					CyberSAGE however does create some folders on the users system for
+					the purpose of storing the models.The user may double click the
+					executable to begin using the tool. A one time welcome screen is
+					seen when CyberSAGE is started for the first time.
+				<figure align="center">
+					<a href="img/image01.png"><img src="img/image01.png"
+						title="CyberSAGE welcome screen" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 1 : CyberSAGE welcome screen</b>
+					</figcaption>
+				</figure>
+	
+				</p>
+				<p>
+					First time users of CyberSAGE may download our <a
+						href="https://www.illinois.adsc.com.sg/cybersage/Smart Grid Project.zip">sample
+						project</a> which contains all the input models in a zipped format.
+					Upon download these may be directly imported into CyberSAGE tool via
+					the <b>Menu -> Import Project</b> option of the menu bar. The models
+					will be automatically unzipped** and loaded into the project
+					workspace.
+				</p>
+				<figure align="center">
+					<a href="img/image14.png"><img src="img/image14.png"
+						title="Load the Sample Project into CyberSAGE" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 2 : Load the Sample Project into CyberSAGE</b>
+					</figcaption>
+				</figure>
+				<p>Upon browsing to the location of the stored sample project and
+					clicking OK we see an updated project navigation tree within
+					CyberSAGE.
+				<figure align="center">
+					<a href="img/image05.png"><img src="img/image05.png"
+						title="Sample smart grid project loaded into CyberSAGE" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 3 : Sample smart grid project loaded into CyberSAGE</b>
+					</figcaption>
+				</figure>
+	
+				As seen from the above figure, all the input models have been
+				successfully loaded into the project tree. Click on any model in the
+				project tree to see the graphical canvas being updated. Single click
+				on each of the model files except the Rules file to load them into
+				the drawing canvas.
+	
+				</p>
+	
+			</section>
+	
+			<section id="inputprep">
+				<h3>Input Models</h3>
+				<p>The various pieces of diverse information such as business
+					processes, network topology and adversary information will be
+					represented by CyberSAGE as input models. These will be used to
+					initialize the graph generation engine. Let us discuss each of these
+					models in the following sections.</p>
+				<h4>
+					<b><i>Workflow modelling</i></b>
+				</h4>
+				<p>Workflows describe the business processes of a system. They
+					represent a series of activity that need to be performed for the
+					accomplishment of a given task. The default workflow model included
+					in the sample project is a simple workflow detailing the
+					interactions that take place a DMS and RTU in a smart grid
+					environment. More complicated workflows with non sequential
+					execution interactions are also supported by CyberSAGE and details
+					for the same are available in the ``User Manual``.</p>
+	
+				<figure align="center">
+					<a href="img/image04.png"><img src="img/image04.png"
+						title="Sample workflow model" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 4 : Sample workflow model</b>
+					</figcaption>
+				</figure>
+	
+				<h4>
+					<b><i>System modelling</i></b>
+				</h4>
+				<p>A system model describes all the components of the proposed
+					system under study. It is similar in concept to the network diagram
+					of the system. CyberSAGE allows such models to be created within the
+					application itself using specialized editors. Please refer to our
+					``User Manual`` on how to create such system models. The model
+					included in the default project shows interactions between an
+					abstracted set of components typically found in a smart grid
+					environment.</p>
+	
+				<figure align="center">
+					<a href="img/image10.png"><img src="img/image10.png"
+						title="Sample workflow model" width="50%" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 5 : Sample system model</b>
+					</figcaption>
+				</figure>
+				<p>Single clicking on any of the components of the system model
+					on the graphical canvas will trigger the property sheet editor which
+					allows user to change any of the default specified values.</p>
+				<figure align="center">
+					<a href="img/image18.png"><img src="img/image18.png"
+						title="Property sheet editor to update properties for the HMI component" />
+					</a>
+					<figcaption class="center-block">
+						<b>Figure 6 : Property sheet editor to update properties for
+							the HMI component</b>
+					</figcaption>
+				</figure>
+	
+	
+				<h4>
+					<b><i>Attacker modelling</i></b>
+				</h4>
+				<p>Compared to the well-defined workflow and system models,
+					CyberSAGE adversary models are less complex. In CyberSAGE we define
+					an attacker from the perspective of the amount of resources
+					(manpower, money) , level of access ( physical access or network
+					access to systems) and the skillset (hacking capabilities) possessed
+					by the attacker. We use this information to argue whether the
+					devices in the system under study can be compromised by this
+					particular attacker or not. We include two sample models in our
+					default project, one of a fairly powerful attacker and the other of
+					a fairly weak attacker.</p>
+	
+				<figure align="center">
+					<a href="img/image16.png"><img src="img/image16.png"
+						title="Sample attacker model" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 7 : Sample attacker model</b>
+					</figcaption>
+				</figure>
+				<p>Single clicking on any of the axis of the attacker model will
+					trigger the property sheet editor which allows user to change any of
+					the default specified values.</p>
+				<figure align="center">
+					<a href="img/image13.png"><img src="img/image13.png"
+						title="Property sheet editor to update the skills
+							capabilities of the adversary" />
+					</a>
+					<figcaption class="center-block">
+						<b>Figure 8 : Property sheet editor to update the skills capabilities of the adversary</b>
+					</figcaption>
+				</figure>
+	
+			</section>
+	
+			<section id="drools">
+				<h3>Drools Rule Engine</h3>
+	
+				<p>The rules files cannot be loaded into the canvas drawing
+					space. Instead double click on the rules file to open it into the
+					default text editor of your system ***. You may edit the rules file
+					or for the sake of simplicity keep using the sample ones that have
+					been provided as is. Drools rule updation is a complicated procedure
+					and is dealt with in the user manual.</p>
+	
+				<figure align="center">
+					<a href="img/image06.png"><img src="img/image06.png"
+						title="Drools rule files open in Notepad ++" width="50%" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 9 : Drools rule files open in Notepad ++</b>
+					</figcaption>
+				</figure>
+	
+			</section>
+	
+			<section id="argraph">
+				<h3>Argument Graph Generation & Evaluation</h3>
+	
+				<p>In order to run an evaluation for the specified input models
+					you may select “Run Assessment” from menu bar and click ``Generate
+					Argument Graph``.</p>
+	
+				<figure align="center">
+					<a href="img/image12.png"><img src="img/image12.png"
+						title="Initiate an assessment" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 10 : Initiate an assessment</b>
+					</figcaption>
+				</figure>
+	
+				<p>Select the input models and the rule file against which the
+					evaluation needs to run. The simplest rule file is the GGraphRule
+					file which associates a goal to the workflow node, the GSGraphRule
+					file associates the devices of the system model to the workflow
+					nodes plus the capabilities of the GGraphRule file while finally,
+					the GSAGraphRule file associates the attacker to the device plus the
+					capabilities of the GGraphRule and GSGraphRule files.Lets select the
+					GSAGraphRule file. Click on the ``Generate`` button to being the
+					assessment process.</p>
+	
+				<figure align="center">
+					<a href="img/image00.png"><img src="img/image00.png"
+						title="Select the models and rule files to initiate an assessment"
+						width="40%" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 11 : Select the models and rule files to initiate an
+							assessment</b>
+					</figcaption>
+				</figure>
+				<p>CyberSAGE is able to relate the workflow and system models via
+					the mapping of the actors that operate on specific workflow steps to
+					the corresponding devices in the system model. An incorrect mapping
+					will result in inaccurate results being generated. The workflow
+					actors are specified via names on the top of rectangular swim lines
+					within which the workflow step is contained. For example in our
+					sample project we have three actors namely DMS-A , RTU-1 & RTU-2.
+					Select the correct mapping between the workflow steps and the device
+					actors in the pop up dialog.</p>
+	
+				<figure align="center">
+					<a href="img/image08.png"><img src="img/image08.png"
+						title="Workflow Actor - Device Mapping default initialization" />
+					</a>
+					<figcaption class="center-block">
+						<b>Figure 12 : Workflow Actor - Device Mapping default
+							initialization</b>
+					</figcaption>
+				</figure>
+				<p>If you are running CyberSAGE for the first time the mappings
+					will be initialized to “Unspecified” and you will be expected to
+					select the correct mapping via the dropdown combobox.</p>
+	
+				<figure align="center">
+					<a href="img/image11.png"><img src="img/image11.png"
+						title="Workflow Actor - Device Mapping" /> </a>
+					<figcaption class="center-block">
+						<b>Figure 13 : Workflow Actor - Device Mapping</b>
+					</figcaption>
+				</figure>
+				<p>CyberSAGE is able to remember the mappings for the specified
+					workflow - system model and hence subsequently the next time an
+					evaluation is attempted the mappings will be reloaded. Click on
+					``Generate`` button to initiate the evaluation process.</p>
+			</section>
+			<section id="outmodel">
+				<h3>Output Models</h3>
+	
+				<p>The evaluation process may take a few seconds (a rough
+					estimate would be 10-15 seconds but this largely depends on the
+					network connection bandwidth to the CyberSAGE server). If the
+					evaluation is successful you will be prompted to provide a name for
+					the output model. The resultant argument graph will also be loaded
+					into the canvas area of CyberSAGE. If no graph is seen then you may
+					need to see the log files for any diagnostic messages at
+					$USER_HOME/cybersage/log.</p>
+	
+				<figure align="center">
+					<a href="img/image15.png"><img src="img/image15.png" width="50%"
+						title=" Assessment result showing the argument graph on the canvas and evaluation statistics on the property sheet editor
+" />	
+					</a>
+					<figcaption class="center-block">
+						<b>Figure 14 : Assessment result showing the argument graph on
+							the canvas and evaluation statistics on the property sheet editor
+						</b>
+					</figcaption>
+				</figure>
+	
+				<p>
+					CyberSAGE shows useful statistical information about every workflow,
+					system and adversary node in the generated argument graph. Clicking
+					on any of the node of the graph will update the property sheet with
+					these per node statistics. </br>
+					</br> <b>**</b> In order for the sample projects to be successfully
+					loaded into the project workspace CyberSAGE expects an unzipping
+					software such as WinZIP to be installed on the users system the
+					absence of which will cause the importing of the sample project to
+					fail. The alternative to this would be to download some unzipping
+					utility and manually unzip and place the model files in their
+					correct folders at $USER_HOME/CSProject.</br>
+					</br> <b>***</b> If upon double clicking the drools rule file, it does
+					not open in any editor then it means that default editor of the
+					system does not recognize a drool file extension (.drl is the
+					extension for a drools rule file). In such case you may need to edit
+					the preference settings of the default editor or alternatively go to
+					the workspace location of the drools file i.e $USER_HOME/CSProject/
+					<Project_Name>/4. Rules Engine and open the file in
+					the default editor and permanently store the extension association.
+					Another approach would be to update the registry. 
+				</p>
+	
+	
+			</section>
+	
+	
+			<div class="footer">
+				<p>&copy; Copyright 2015 Illinois at Singapore Pte Ltd and Agency
+					for Science Technology and Research</p>
+			</div>
+		</div>
+	</div>
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
