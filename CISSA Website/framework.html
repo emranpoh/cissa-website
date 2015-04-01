@@ -1,0 +1,87 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Framework</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/jumbotron-narrow.css" />
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a><img class="center-block"
+						src="img/final_02.png" title="CISSA" height="50" /></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="framework.html">CISSA Framework</a></li>
+					<li><a href="case_landing.html">CISSA Cases</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div class="row">
+			<div class="main">
+				<h1>CISSA Framework</h1>
+
+				<section id="abstract">
+
+					<p>Understanding the system security level against cyber threats is critical for today's IT or IT-enabled infrastrctures, such as cloud storage and ocomputing services, banking and payment systems or cyber-physical systems such as smart grids. Despite promoting security in general, adopting various compliance standards often do not sufficiently capture the inherent relationships among different security related aspects of the studied infrastructure. Witnessing the surge of interest in model-based security assessment in the recent years, various aspects of systems, threats, security measures, and more importantly, how these aspects interact with each other, are abstracted into models, often through rigorous defined formalisms.</p>
+					<p>To assess this, we present an open repository of Common Input Scenarios for Security Assessment (CISSA) for different model-based security assessment tools. By proposing a CISSA design framework and constructing six initial scenarios based on real-world incidents, we experimentally show how CISSA can provide new insights and concrete reference points to both security practitioners and tool developers.</p>
+				</section>
+
+				<section id="screenshots">
+					<a>
+						<img class="center-block" src="img/fig1.PNG" title=""/>
+					</a>
+					<div><strong>Fig. 1 - Security assessment process driven by CISSA</strong></div>
+				</section>
+
+				<section class="text">
+					<p>As illustrated in Figure 1, a rich and open repository of input scenarios would allow both the security practitioners and the research community to better compare different methodologies, which has been identified as a crucial need in security assessment and then to propose a first blueprint design (CISSA) for specifying such common input scenarios and for different model-based security assessment tools.</p>
+				</section>
+
+				<section id="screenshots">
+					<a>
+						<img class="center-block" src="img/fig2.PNG" title=""/>
+					</a>
+
+					<div><strong>Fig. 2 - Elements in an input scenario and their relationships</strong></div>
+				</section>
+
+				<section class="text">
+					<p>
+						Guided by certain design considerations, we propose a shcema for representing security-relavant information. While there may be other ways to represent such information, the schema that we propose, as depicted in Figure 2, could serve as a valuable starting point for the CISSA concept. Existing resources such as security incident reports are largely unstructured, and it would require human comprehension and transformation before they can be used by security assessment tools. Databases such as NVD provide machine-readable format, but only include information on the specifics of the vulnerabilities, which is far from sufficient for most model-based security assessment tools. In the design of CISSA, the identified elements and their attributes provide a unified way to represent information on both the target systems and the security incident.</p>
+				</section>
+
+				<section id="references"></section>
+
+				<div class="footer">
+					<p>&copy; Copyright 2015 Illinois at Singapore Pte Ltd and Agency
+						for Science Technology and Research</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

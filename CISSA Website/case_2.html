@@ -1,0 +1,90 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stuxnet</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/jumbotron-narrow.css" />
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a><img class="center-block"
+						src="img/final_02.png" title="CISSA" height="50" /></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="framework.html">CISSA Framework</a></li>
+					<li class="active"><a href="case_landing.html">CISSA Cases</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li><a href="case_landing.html">CISSA Cases</a></li>
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li><a href="case_1.html">Target</a></li>
+					<li class="active"><a href="case_2.html">Stuxnet <span class="sr-only">(current)</span></a></li>
+					<li><a href="case_3.html">Maroochy</a></li>
+					<li><a href="case_4.html">Dragonfly</a></li>
+					<li><a href="case_5.html">SK Communications</a></li>
+					<li><a href="case_6.html">Syrian Electronic Army</a></li>
+				</ul>
+				<ul class="nav nav-sidebar"	>
+					<li class="upload"><a href="case_upload.html">Upload</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<h1>Stuxnet</h1>
+
+				<section id="abstract">
+					<p>The Stuxnet attack, widely publicized in 2010, is arguably the most well-known example of a cyber attack targeting systems compromising of both cyber and physical equipment. The attack was targeted at the centrifuge machinery in the Iranian nuclear enrichment facilities. This worm works its attack in multiple steps, with each increasing the potential of damage incurred. The attack first enters into a cyber system via public Internet and escalated its privilege similar to an ordinary cyber attack. This step involves multiple zero-day exploits. It then attempts to bypass the "air-gap" that is supposed to physically segregate the control networks from the Internet by infecting USB storage devices. When certain conditions are met and the network in within the attacker's control, it intermittently changes the spinning speed of the centrifuges. As a result, the Stuxnet worm has damaged Iran's centrifuges and delayed its uranium enrichment efforts.</p>
+				</section>
+
+				<section id="screenshots">
+					<a><img class="center-block"
+					src="img/CPStopology_new.png"
+					title="" width="50%"  /></a>
+					<div><strong>Fig. 5: Network topology of a Cyber-Physical System (CPS)</strong></div>
+				</section>
+				
+				<section class="text">
+					<p>Cases like Stuxnet has revealed that a cyber-physical system is still vulnerable even without direct connection to the outside cyber world.Similar to that of Target, Stuxnet manifest sophisticated multi-stage compromises, exploiting various vulnerabilities and the configurations of targeted system as attack vectors. </p>
+				</section>
+
+				<section id="resources">
+					<a class="btn btn-success btn-download" href="cissa-xml/Stuxnet_CISSA.zip" target="_blank">Download Stuxnet_CISSA.zip</a>
+				</section>
+
+				<div class="footer">
+					<p>&copy; Copyright 2015 Illinois at Singapore Pte Ltd and Agency
+						for Science Technology and Research</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

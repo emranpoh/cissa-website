@@ -119,6 +119,15 @@ body {
 	}
 }
 
+@media (max-width: 600px) {
+  #screenshots > a > img{
+    width:100%;
+  }
+  #screenshots{
+    width:100%;
+  }
+}
+
 .navbar-fixed-top{
 	border-bottom:solid 1px;
 	border-bottom-color: #ddd;
@@ -190,4 +199,10 @@ body {
 
 .upload > a{
   color:#419641;
+}
+
+@media (min-width: 601px) {
+#screenshots > a > img{
+    width:50%;
+  }
 }

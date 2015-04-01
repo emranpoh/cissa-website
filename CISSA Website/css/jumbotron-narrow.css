@@ -30,11 +30,25 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (max-width: 1500px) {
   .container {
-    max-width: 1500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
+
+@media (min-width: 1501px) {
+  .container {
+    width: 1500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -80,3 +94,26 @@ body {
 }
 
 .footer{margin-top:20px;}
+
+#screenshots > div{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#screenshots{
+  width:50%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#people > div > div{
+  float:left;
+}
+
+.people-cell{
+  float:left;
+  width:320px;
+  height:150px;
+}

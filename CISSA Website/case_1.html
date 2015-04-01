@@ -26,8 +26,9 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
-					<li class="active"><a href="framework_1.html">CISSA Framework</a></li>
-					<li><a href="request.html">Download</a></li>
+					<li><a href="framework.html">CISSA Framework</a></li>
+					<li class="active"><a href="case_landing.html">CISSA Cases</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				</div><!--/.nav-collapse -->
@@ -36,17 +37,18 @@
 		<div class="row">
 			<div class="col-sm-3 col-md-2 sidebar">
 				<ul class="nav nav-sidebar">
-					<li class="active"><a href="framework_1.html">Target <span class="sr-only">(current)</span></a></li>
-					<li><a href="framework_2.html">Stuxnet</a></li>
+					<li><a href="case_landing.html">CISSA Cases</a></li>
 				</ul>
 				<ul class="nav nav-sidebar">
-					<li><a href="framework_3.html">Maroochy</a></li>
-					<li><a href="framework_4.html">Dragonfly</a></li>
-					<li><a href="framework_5.html">SK Communications</a></li>
-					<li><a href="framework_6.html">Syrian Electronic Army</a></li>
+					<li class="active"><a href="case_1.html">Target <span class="sr-only">(current)</span></a></li>
+					<li><a href="case_2.html">Stuxnet</a></li>
+					<li><a href="case_3.html">Maroochy</a></li>
+					<li><a href="case_4.html">Dragonfly</a></li>
+					<li><a href="case_5.html">SK Communications</a></li>
+					<li><a href="case_6.html">Syrian Electronic Army</a></li>
 				</ul>
 				<ul class="nav nav-sidebar"	>
-					<li class="upload"><a href="framework_upload.html">Upload</a></li>
+					<li class="upload"><a href="case_upload.html">Upload</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -57,17 +59,29 @@
 				</section>
 
 				<section id="screenshots">
-				<a><img class="center-block"
-				src="img/fig3.PNG"
-				title="" width="50%"  /></a>
-				<br>
-				<a><img class="center-block"
-				src="img/fig4.PNG"
-				title="" width="50%"  /></a>
-				<!--<br>
-				<a><img class="center-block"
-				src="img/placeholder_600x400.svg"
-				title="" width="50%"  /></a>-->
+					<a><img class="center-block"
+					src="img/fig3.PNG"
+					title="" width="50%"  /></a>
+					<div><strong>Fig. 3: Components & network for Target input scenario</strong></div>
+				</section>
+				
+				<section class="text">
+					<p>Figure 3 depicts the network connection (<i>E<sub>N</sub></i>) and devices (<i>V<sub>N</sub></i>) considered in this scenario. Representing a standard enterprise network, a large retailer such as Target typically has 100s or 1000s of locations, each with numerous point-of-sale (POS) stations that accept and process customer payments. The model includes K store locations, each with <i>T<sub>K</sub></i> POS machines which are connected via a switch to a back-of-house (BoH) server. This BoH server connects to a central payment server at the corporate network, which interfaces with external financial institutions to verify transactions. The corporate network also includes a directory server, a web server, and a database server. We abstract other corporate servers from this model.</p>
+				</section>
+
+				<section id="screenshots">
+					<a><img class="center-block"
+					src="img/fig4.PNG"
+					title="" width="50%"  /></a>
+					<div><strong>Fig. 4: Transaction operation for Target input scenario</strong></div>
+					<!--<br>
+					<a><img class="center-block"
+					src="img/placeholder_600x400.svg"
+					title="" width="50%"  /></a>-->
+				</section>
+
+				<section class="text">
+					<p>Arguably the most important system operation in this scenario is the handling of consumer credit card information during POS transactions. Figure 4 depicts this process. Here the vertices <i>V<sub>O</sub></i> denote the major operations from the POS terminal, a store's BoH Server, and the Bank responsible for clearing the transaction, while the edges <i>E<sub>O</sub></i> imply sequential order. The mapping function <i>Map<sub>O</sub></i> in this case assigns specific devices to the roles described above (e.g., POS Terminal 5 in Store #300). Additional system operations in this scenario could include the POS Terminal or BoH Server's software update process, or the process for collecting and storing personally identifiable information (PII) in the company database.</p>    
 				</section>
 
 				<section id="references"></section>
